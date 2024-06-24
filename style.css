@@ -1,0 +1,586 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100vw;
+    display: flex;
+    align-items: self-end;
+    justify-content: space-evenly;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.fa-burger {
+    color: rgba(255, 166, 0, 0.743);
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+
+.fa-burger:hover {
+    color: orange;
+}
+
+i {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.3s;
+
+}
+
+.active,
+a:hover {
+    color: orange;
+
+}
+
+.nav-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+}
+
+.nav-prt-1 {
+    color: black;
+    width: 80vmin;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.menu {
+    font-size: larger;
+    display: none;
+
+
+}
+
+.desktop-menu {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+
+.mobile-menu {
+    height: 50vmax;
+    display: none;
+    width: 100vw;
+
+}
+
+.nav-prt-2 {
+    font-size: 5vmax;
+    padding-right: 20vmin;
+}
+
+.nav-prt-3 {
+    color: black;
+    width: 50vmin;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-icons {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Home {
+    display: flex;
+    justify-items: center;
+
+}
+
+.hero-text {
+    width: 50%;
+    height: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.hero-text h1 {
+    text-align: center;
+    font-size: 8rem;
+    color: aliceblue;
+}
+
+.hero-text p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+}
+
+.hero-text button {
+    height: 5vmax;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background-color: orange;
+    font-family: cursive;
+    transition-duration: 0.3s;
+    transition-property: font-size;
+}
+
+.hero-text button:hover {
+    font-size: 2.1rem;
+}
+
+.hero-img {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    cursor: grab;
+
+    justify-content: space-evenly;
+
+}
+
+.hero-img-burger img {
+    height: 50vmax;
+
+
+
+}
+
+
+.hero-img-burger {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.our-product {
+    background-color: rgb(16, 16, 16);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-bar {
+
+    width: 80%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10%;
+}
+
+.menu-bar button {
+    background-color: orange;
+    height: 150%;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+
+
+.btn {
+    width: 20%;
+    height: 100%;
+
+}
+
+.menu-products {
+    width: 80%;
+    display: none;
+    height: 50%;
+
+
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product {
+    height: 90%;
+    width: 30%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 13px;
+    overflow: hidden;
+
+}
+
+.product-img {
+    background-image: url(./asset/product1.jpg);
+    height: 80%;
+    background-repeat: no-repeat;
+
+    width: 40%;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.product-description {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    line-height: 20px;
+    align-items: center;
+    color: aliceblue;
+    padding: 5px;
+
+}
+
+
+#location-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.location {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.location-info {
+    width: 50%;
+    height: 80%;
+    font-size: 5rem;
+    color: white;
+    padding: 8vmax;
+    text-align: center;
+    border-radius: 3rem;
+
+}
+
+.location-info p {
+    font-size: 1.5rem;
+}
+
+.location-info button {
+    border: 2px solid orange;
+    height: 4rem;
+    border-radius: 2rem;
+    margin-top: 15vmin;
+    width: 15rem;
+}
+
+.google-map {
+    height: 80%;
+    width: 40%;
+    border-radius: 3rem;
+
+}
+
+footer {
+    height: 15vmax;
+    background-color: gray;
+    overflow: hidden;
+    display: flex;
+    overflow: hidden;
+    border-radius: 100px 0 0 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-box {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+#contactUs {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.form {
+    width: 40%;
+    height: 80%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-img {
+    width: 40%;
+    height: 80%;
+    object-fit: contain;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    color: white;
+}
+
+.form h1 {
+    font-size: 3rem;
+    margin-bottom: 5vmax;
+}
+
+.form button {
+    height: 3vmax;
+    width: 10vmax;
+    background-color: orange;
+    border-radius: 12px;
+
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+    width: 90%;
+    outline: none;
+    margin: 1rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        height: 7vmax;
+        overflow: visible;
+    }
+
+    .nav-part {
+        height: 7vmax;
+    }
+
+    section {
+        background-color: rgb(159, 51, 51);
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .nav-prt-1 {
+        height: 200%;
+        margin-top: 24vh;
+
+    }
+
+    .menu {
+        display: block;
+        width: 10vmin;
+        margin-left: 2rem;
+
+
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        z-index: 99;
+        border-radius: 0rem 0rem 3rem 3rem;
+        height: 250px;
+        left: 0;
+        padding-top: 5vmin;
+        top: -250px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.276);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(2px);
+        padding: 50px 30px;
+
+    }
+
+    h4 {
+        display: block;
+    }
+
+    .nav-prt-2 {
+        margin-right: -2rem;
+    }
+
+    .nav-prt-3 {
+        display: none;
+    }
+
+    .close {
+        position: absolute;
+        top: 55px;
+
+        left: 3.5vmax;
+    }
+
+    .close button {
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+
+    }
+
+
+    .close button i {
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-text {
+        width: 80vw;
+    }
+
+    section {
+        align-items: center;
+    }
+
+    .Home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+
+    .hero-text button {
+        background-image: url(./asset/pngwing.com\ \(4\).png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: 1.8rem;
+        height: 100px;
+
+    }
+
+    .our-product {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menu-products {
+        width: 100%;
+
+        flex-direction: column;
+        height: 100%;
+
+
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .product {
+        width: 45%;
+        font-size: 0.5rem;
+        height: 25%;
+    }
+
+    .product-img {
+        padding-right: 40%;
+    }
+
+    #location-section {
+        flex-direction: column;
+    }
+
+    .location-info {
+        width: 90%;
+        text-align: center;
+        font-size: 2rem;
+        padding: 6vmax;
+
+    }
+
+    .location-info button {
+        width: 10rem;
+    }
+
+    .google-map {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    .form {
+        width: 90%;
+
+    }
+
+    .form button {
+        height: 7vmax;
+        width: 15vmax;
+
+    }
+
+    .form-img {
+        display: none;
+    }
+
+}
